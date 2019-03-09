@@ -64,6 +64,11 @@ app.get('/',(req,res)=>{
   res.send("into home")
 })
 
+app.get('/test',(req,res)=>{
+  console.log("into home");
+  // res.sendFile(path.resolve(__dirname,'../public/index.html'))
+  res.send("test 1")
+})
 
 // app.get('/test',(req,res)=>{
 //   console.log("into apiTest");
